@@ -28,7 +28,7 @@
                     <li><a href="">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px">
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
@@ -74,6 +74,15 @@
         </div>
     </div>
 
+    <!-- Title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View more</p>
+        </div>
+    </div>
+
+    <!-- Products -->
     <div class="small-container">
        <div class="row">
             <div class="col-4">
@@ -182,7 +191,21 @@
 
     <!-- JS for product gallery -->
     <script>
-        
+        var productImg = document.getElementById('product-img');
+        var smallImg = document.getElementsByClassName('small-img');
+        smallImg[0].onclick = function () {
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            productImg.src = smallImg[3].src;
+        }
     </script>
+
 </body>
 </html>
