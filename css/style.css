@@ -6,8 +6,20 @@
   box-sizing: border-box;
 }
 
+:root
+{
+  --primaryColor: #ff523b;
+  --secondColor: #ffd6d6;
+  --darkColor: #563434;
+  --grayColor: #555;
+  --ligthGrayColor: #8a8a8a;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --poppins: "Poppins", sans-serif;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--poppins);
 }
 
 .navbar {
@@ -33,11 +45,11 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: #555;
+  color: var(--grayColor);
 }
 
 p {
-  color: #555;
+  color: var(--grayColor);
 }
 
 .container {
@@ -72,8 +84,8 @@ p {
 
 .btn {
   display: inline-block;
-  background-color: #ff523b;
-  color: #fff;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 25px;
@@ -81,11 +93,11 @@ p {
 }
 
 .btn:hover {
-  background-color: #563434;
+  background-color: var(--darkColor);
 }
 
 .header {
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(var(--whiteColor), var(--secondColor));
 }
 
 .header .row {
@@ -130,12 +142,12 @@ p {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #555;
+  color: var(--grayColor);
 }
 
 .title::after {
   content: "";
-  background-color: #ff523b;
+  background-color: var(--primaryColor);
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -146,7 +158,7 @@ p {
 }
 
 h4 {
-  color: #555;
+  color: var(--grayColor);
   font-weight: normal;
 }
 
@@ -155,7 +167,7 @@ h4 {
 }
 
 .rating i {
-  color: #ff523b;
+  color: var(--primaryColor);
 }
 
 .col-4:hover {
@@ -163,7 +175,7 @@ h4 {
 }
 
 .offer {
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(var(--whiteColor), var(--secondColor));
   margin-top: 80px;
   padding: 30px 0;
 }
@@ -173,7 +185,7 @@ h4 {
 }
 
 small {
-  color: #555;
+  color: var(--grayColor);
 }
 
 /*----------- testimonial ------------*/
@@ -201,18 +213,18 @@ small {
 
 .fa-quote-left {
   font-size: 34px;
-  color: #ff523b;
+  color: var(--primaryColor);
 }
 
 .col-3 p {
   font-size: 12px;
   margin: 12px 0;
-  color: #777;
+  color: var(--ligthGrayColor);
 }
 
 .testimonial .col-3 h3 {
   font-weight: 600;
-  color: #555;
+  color: var(--grayColor);
   font-size: 16px;
 }
 
@@ -237,8 +249,8 @@ small {
 
 /* ---------- Footer ------------ */
 .footer {
-  background-color: #000;
-  color: #8a8a8a;
+  background-color: var(--blackColor);
+  color: var(--ligthGrayColor);
   font-size: 14px;
   padding: 60px 0 20px;
 }
@@ -248,7 +260,7 @@ small {
 }
 
 .footer h3 {
-  color: #fff;
+  color: var(--whiteColor);
   margin-bottom: 20px;
 }
 
@@ -294,7 +306,7 @@ ul {
 
 .footer hr {
   border: none;
-  background-color: #b5b5b5;
+  background-color: var(--ligthGrayColor);
   height: 1px;
   margin: 20px 0;
 }
@@ -316,7 +328,7 @@ ul {
     position: absolute;
     top: 70px;
     left: 0;
-    background-color: #333;
+    background-color: var(--grayColor);
     width: 100%;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -330,7 +342,7 @@ ul {
   }
 
   nav ul li a {
-    color: #fff;
+    color: var(--whiteColor);
   }
 
   .menu-icon {
@@ -346,7 +358,7 @@ ul {
 }
 
 select {
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primaryColor);
   padding: 5px;
 }
 
@@ -360,7 +372,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primaryColor);
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -370,8 +382,8 @@ select:focus {
 }
 
 .page-btn span:hover {
-  background-color: #ff523b;
-  color: #fff;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 /* ---------- Media query for less than 600 screen size ------------ */
@@ -405,7 +417,7 @@ select:focus {
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 1px solid #ff523b;
+  border: 1px solid var(--primaryColor);
 }
 
 .single-product input:focus {
@@ -413,7 +425,7 @@ select:focus {
 }
 
 .single-product h3 > i {
-  color: #ff523b;
+  color: var(--primaryColor);
   margin-left: 10px;
 }
 
@@ -445,8 +457,8 @@ table {
 th {
   text-align: left;
   padding: 5px;
-  color: #fff;
-  background-color: #ff523b;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
   font-weight: normal;
 }
 
@@ -461,7 +473,7 @@ td input {
 }
 
 td a {
-  color: #ff523b;
+  color: var(--primaryColor);
   font-size: 12px;
 }
 
@@ -477,7 +489,7 @@ td img {
 }
 
 .total-price table {
-  border-top: 3px solid #ff523b;
+  border-top: 3px solid var(--primaryColor);
   width: 100%;
   max-width: 400px;
 }
@@ -494,12 +506,12 @@ th:last-child {
 .account-page
 {
   padding: 50px 0;
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(var(--whiteColor), var(--secondColor));
 }
 
 .form-container
 {
-  background-color: #fff;
+  background-color: var(--whiteColor);
   width: 300px;
   height: 400px;
   position: relative;
@@ -514,7 +526,7 @@ th:last-child {
 {
   font-weight: bold;
   padding: 0 10px;
-  color: #555;
+  color: var(--grayColor);
   cursor: pointer;
   width: 100px;
   display: inline-block;
@@ -544,7 +556,7 @@ form input
   height: 30px;
   margin: 10px 0;
   padding: 0 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--ligthGrayColor);
 }
 
 form .btn
@@ -579,7 +591,7 @@ form a
 {
   width: 100px;
   border: none;
-  background-color: #ff523b;
+  background-color: var(--primaryColor);
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
