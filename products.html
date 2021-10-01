@@ -29,7 +29,7 @@
                 </ul>
             </nav>
             <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            <img src="images/menu.png" class="menu-icon" id="menu-icon">
         </div>
     </div>
 
@@ -244,17 +244,7 @@
         </div>
     </div>
 
-    <!-- JS for toggle menu -->
-    <script>
-        let menuItems = document.getElementById('menuItems');
-        menuItems.style.maxHeight = "0px";
-        function menutoggle() {
-            if(menuItems.style.maxHeight == "0px") {
-                menuItems.style.maxHeight = "200px";
-            } else {
-                menuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
+    <!-- Custom Javascript -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
